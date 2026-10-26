@@ -1,0 +1,66 @@
+/* Better width calculation */
+* {
+  box-sizing: border-box;
+}
+
+/* Button hover effect */
+.profile-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Page background and font */
+body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Main heading */
+h1 {
+  color: green;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Paragraph */
+p {
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+
+/* Profile card */
+.profile-card {
+  background-color: white;
+  width: 300px;
+  padding: 25px;
+  margin: 40px auto;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Card heading */
+.profile-card h1 {
+  font-size: 26px;
+  color: #2563eb;
+}
+
+/* Card paragraph */
+.profile-card p {
+  font-size: 16px;
+}
+
+/* Button styling */
+.profile-card button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
