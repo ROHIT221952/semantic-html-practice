@@ -1,0 +1,120 @@
+/* Reset and basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    padding: 25px 8%;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+/* Main Grid layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 30px 8%;
+}
+
+/* Common item styling */
+.grid-item {
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.grid-item h2 {
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-column: 1;
+    grid-row: span 2;
+    background-color: #dbeafe;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+/* Main content */
+.main-content {
+    grid-column: 2 / -1;
+}
+
+/* Dashboard cards */
+.card {
+    text-align: center;
+}
+
+/* Wide card */
+.wide-card {
+    grid-column: 2 / -1;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .dashboard {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sidebar {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .main-content,
+    .wide-card {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .sidebar,
+    .main-content,
+    .wide-card {
+        grid-column: 1;
+    }
+
+    .grid-item {
+        padding: 20px;
+    }
+}
