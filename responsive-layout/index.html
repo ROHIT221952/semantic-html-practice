@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Layout Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">DevLearn</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">LEARN. BUILD. GROW.</p>
+
+                    <h1>Build Your Future with Web Development</h1>
+
+                    <p class="hero-description">
+                        Learn HTML, CSS and JavaScript by building
+                        practical projects and improving your skills.
+                    </p>
+
+                    <a href="#courses" class="btn">Explore Courses</a>
+                </div>
+
+                <div class="hero-card">
+                    <h2>Start Learning Today</h2>
+                    <p>Practice coding and build responsive websites.</p>
+                    <span class="badge">Beginner Friendly</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses container" id="courses">
+            <div class="section-heading">
+                <p class="eyebrow">OUR COURSES</p>
+                <h2>What You Will Learn</h2>
+                <p>Develop essential skills for modern web development.</p>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <div class="course-icon" aria-hidden="true">01</div>
+                    <h3>HTML</h3>
+                    <p>Learn to create structured and accessible web pages.</p>
+                    <a href="#about">Learn More →</a>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-icon" aria-hidden="true">02</div>
+                    <h3>CSS</h3>
+                    <p>Design attractive layouts with Flexbox, Grid and CSS.</p>
+                    <a href="#about">Learn More →</a>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-icon" aria-hidden="true">03</div>
+                    <h3>JavaScript</h3>
+                    <p>Add interactive features to your websites.</p>
+                    <a href="#about">Learn More →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container about-content">
+                <div>
+                    <p class="eyebrow">ABOUT US</p>
+                    <h2>Learn by Building Real Projects</h2>
+                </div>
+
+                <p>
+                    Our goal is to help learners understand web development
+                    through simple explanations, consistent practice and
+                    hands-on projects.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <p>© 2026 DevLearn. All rights reserved.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
